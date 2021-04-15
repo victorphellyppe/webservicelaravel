@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Atendimento extends Model
 {
-    use HasFactory;
+    protected $table = 'atendimentos';
+    protected $primaryKey = 'id_atendimento';
+
+    public $incrementing = false;
+
 }

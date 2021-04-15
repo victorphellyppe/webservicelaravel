@@ -14,7 +14,7 @@ class CreateAtendimentosTable extends Migration
     public function up()
     {
         Schema::create('atendimentos', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id_atendimento');
             $table->string('nome_atendente');
             $table->string('categoria');
             $table->timestamps();

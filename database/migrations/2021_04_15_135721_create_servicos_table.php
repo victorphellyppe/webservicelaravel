@@ -17,6 +17,7 @@ class CreateServicosTable extends Migration
             $table->increments('id');
             $table->string('nome_servico');
             $table->date('data');
+            
             $table->timestamps();
         });
     }
