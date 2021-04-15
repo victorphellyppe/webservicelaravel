@@ -17,7 +17,6 @@ class CreateAtendimentosTable extends Migration
             $table->increments('id');
             $table->string('nome_atendente');
             $table->string('categoria');
-            $table->datetime('created_at', $precision = 0);
             $table->timestamps();
         });
     }

@@ -16,6 +16,7 @@ class CreateProfissionalsTable extends Migration
         Schema::create('profissionals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome',100);
+            $table->char('cpf',11)->unique()->nullable();
             $table->string('sexo',15);
             $table->string('funcao',50);
             $table->string('telefone',20);
